@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-
+import {storeProvider} from './redux/app.store'
 @NgModule({
   declarations: [
     AppComponent
@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [storeProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
